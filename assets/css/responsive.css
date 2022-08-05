@@ -1,3 +1,276 @@
+/* tablet and mobile */
+@media (max-width: 1023px) {
+  .header-below .main-section {
+    flex-direction: column;
+  }
+
+  #middle {
+    height: 2072px;
+  }
+
+  #middle .main-section {
+    flex-direction: column;
+  }
+
+  .header-below .benefit-section {
+    flex-wrap: wrap;
+  }
+
+  #middle {
+    height: 2072px;
+  }
+
+  #middle .main-section {
+    flex-direction: column;
+  }
+
+  #middle-below .main-section {
+    flex-direction: column;
+  }
+
+  #middle-below .main-section.main-bottom {
+    flex-direction: column-reverse;
+  }
+
+  .slider-section .img-left,
+  .slider-section .img-right {
+    display: none;
+  }
+}
+
+/* mobile */
+@media (max-width: 739px) {
+  /* header */
+  #header {
+    height: 2146px;
+    padding-top: 68px;
+  }
+
+  #header .header-web {
+    height: 68px;
+  }
+  .header-web .label {
+    padding-left: 12px;
+  }
+
+  .label img {
+    width: 36px;
+  }
+  .label h1 {
+    font-size: 24px;
+  }
+
+  .navbar a {
+    font-size: 24px;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    padding: 16px 12px 0 12px;
+    height: 60px;
+  }
+
+  .header-web .navbar ul {
+    display: none;
+    width: auto;
+    padding: 0;
+    margin-left: 12px;
+    margin-right: 64px;
+  }
+
+  .navbar ul li {
+    padding: 16px 0;
+  }
+
+  .header-below {
+    margin-top: 24px;
+  }
+
+  .header-below .main-section {
+    margin-top: 0;
+  }
+  .header-below .main-section {
+    flex-direction: column;
+  }
+
+  .header-below .benefit-section {
+    flex-direction: column;
+  }
+
+  .content-section .heading {
+    width: 375px;
+    padding-left: 30px;
+  }
+
+  .content-section .contact {
+    flex-wrap: wrap;
+  }
+
+  .content-section .sub-heading {
+    padding-left: 30px;
+    width: 310px;
+  }
+
+  /* .content-section .contact {
+    padding-left: 20px;
+  } */
+
+  .send-me .submit-form,
+  .content-section a {
+    margin-bottom: 20px;
+    margin-left: 32px;
+  }
+
+  .main-section img {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 16px;
+  }
+
+  .heading-font {
+    font-size: 32px;
+  }
+
+  .header-below .benefit-section {
+    height: 100%;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .benefit-section .benefit-item {
+    margin: 20px;
+  }
+  #header .header-last {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-last .text-1 {
+    font-size: 20px;
+  }
+
+  .header-last .text-2 {
+    font-size: 24px;
+  }
+  /* middle */
+  #middle {
+    height: 1858px;
+  }
+
+  #middle .main-section {
+    padding-top: 56px;
+  }
+
+  #middle-below .main-bottom img,
+  #middle .main-section img {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #middle .belive {
+    margin-top: 80px;
+  }
+
+  #middle .suggest-travel {
+    margin-top: 0;
+  }
+
+  #middle .heading {
+    width: 375px;
+  }
+
+  #middle .suggest-travel {
+    width: auto;
+    margin-left: 0;
+  }
+  /* middle-below */
+  #middle-below .heading {
+    width: 375px;
+  }
+
+  #middle-below .main-section {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+
+  #middle-below .content-section {
+    margin-top: 0;
+    height: 400px;
+  }
+  .main-section .content-section {
+    padding-left: 0;
+  }
+  /* review-section */
+  #review-section {
+    height: 520px;
+  }
+
+  .heading-review h1,
+  .belive h1 {
+    font-size: 32px;
+  }
+  /* footer */
+  #footer {
+    height: auto;
+  }
+
+  #footer .subsc-title {
+    width: 375px;
+    font-size: 31px;
+    text-align: left;
+  }
+  #footer .subsc-desc {
+    width: 375px;
+    text-align: left;
+    padding-left: 32px;
+  }
+  .send-me .email-form {
+    padding: 20px 40px 20px 64px;
+    margin-bottom: 20px;
+  }
+
+  /* footer-below */
+
+  #footer-below {
+    height: auto;
+  }
+
+  #footer .subsc-title {
+    margin-top: 60px;
+    padding-left: 32px;
+  }
+
+  #footer-below .detail {
+    flex-direction: column;
+    padding-top: 32px;
+  }
+
+  .detail .info-me {
+    padding-left: 10%;
+  }
+
+  .info-me .about-me {
+    width: auto;
+    padding-bottom: 32px;
+  }
+
+  .info-me ul {
+    width: 272px;
+  }
+
+  #footer-below .more-info {
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-between;
+  }
+
+  #footer-below .liscense {
+    font-size: 24px;
+    margin-bottom: 12px;
+    padding-top: 32px;
+  }
+}
+
 /* tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
   #header {
@@ -113,5 +386,10 @@
 
   .more-info li a {
     padding: 12px 0;
+  }
+
+  #footer-below .liscense {
+    padding: 32px;
+    font-size: 24px;
   }
 }

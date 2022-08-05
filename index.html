@@ -7,23 +7,30 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/font.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/font/themify-icons-font/themify-icons/themify-icons.css"
+    />
     <title>Document</title>
   </head>
   <body>
     <div id="main">
       <div id="header">
-        <div class="header-web">
-          <div class="label">
+        <div id="header-web" class="header-web">
+          <div id="label" class="label">
             <img src="./assets/css/image/Logo.png" alt="" />
             <h1>HIGHKING</h1>
           </div>
           <div class="navbar">
-            <ul>
+            <ul id="navul">
               <li><a href="" class="navbar-item">Location</a></li>
               <li><a href="" class="navbar-item">Blogs</a></li>
               <li><a href="" class="navbar-item">Testimonials</a></li>
               <li><a href="" class="navbar-item">Contact </a></li>
             </ul>
+          </div>
+          <div class="mobile-menu-btn">
+            <i id="menu-icon" class="menu-icon ti-menu"></i>
           </div>
         </div>
         <div class="header-below">
@@ -153,7 +160,11 @@
             <img src="./assets/css/image/card-view-left.png" alt="" />
           </li>
           <li class="img-middle">
-            <img src="./assets/css/image/card-view-middle.png" alt="" />
+            <img
+              class="img-slider"
+              src="./assets/css/image/card-view-middle.png"
+              alt=""
+            />
           </li>
           <li class="img-right">
             <img src="./assets/css/image/card-view-right.png" alt="" />
@@ -240,5 +251,27 @@
         <p class="liscense">Copyright © 2021. All Right Reserved.</p>
       </div>
     </div>
+    <script>
+      // var labels = document.getElementsByClassName("label");
+      var headerWeb = document.getElementById("header-web");
+      var label = document.getElementById("label");
+      var menuIcon = document.getElementById("menu-icon");
+      var navUl = document.getElementById("navul");
+      var height = headerWeb.clientHeight;
+      menuIcon.onclick = function () {
+        var isClosed = headerWeb.clientHeight === height;
+        console.log(height);
+        console.log(headerWeb.clientHeight);
+        if (isClosed) {
+          headerWeb.style.height = "auto";
+          label.style.display = "none";
+          navUl.style.display = "block";
+        } else {
+          headerWeb.style.height = null;
+          label.style.display = "flex";
+          navUl.style.display = "none";
+        }
+      };
+    </script>
   </body>
 </html>

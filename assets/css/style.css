@@ -53,6 +53,7 @@ html {
   background: #ecf3ff;
   height: 126px;
   z-index: 1;
+  /* overflow: hidden; */
 }
 
 .header-web .label {
@@ -94,6 +95,23 @@ html {
   line-height: 180%;
   color: #05060a;
   font-weight: 600;
+}
+
+.mobile-menu-btn {
+  display: none;
+}
+
+.mobile-menu-btn:hover {
+  background-color: #fbfeff;
+}
+
+/* .menu-icon:hover {
+  background-color: #ffffff;
+} */
+
+.menu-icon {
+  font-size: 36px;
+  line-height: 36px;
 }
 
 .header-below {
@@ -360,6 +378,11 @@ html {
 
 .slider-section li {
   list-style-type: none;
+}
+
+.img-middle .img-slider {
+  display: block;
+  width: 100%;
 }
 
 #review-section > img {
